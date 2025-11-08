@@ -6,7 +6,9 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 0.9em;
     color: #333;
     display: flex;
     flex-direction: column; /* Added for vertical centering */
@@ -44,13 +46,17 @@ body {
 }
 
 .profile-title {
-    font-size: 1.5em;
-    font-weight: bold;
+    font-size: 1.2em;
+    font-weight: 400;
 }
 
 .profile-name {
-    font-size: 1.2em;
+    font-size: 1em;
     color: #666;
+}
+
+.profile-header {
+    font-weight: 300;
 }
 
 .social-icons {
@@ -77,12 +83,13 @@ body {
 }
 
 .intro h2 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-bottom: 10px;
+    font-weight: 300;
 }
 
 .intro p {
-    font-size: 1em;
+    font-size: 0.9em;
     line-height: 1.6;
     margin-bottom: 20px; 
 }
@@ -94,10 +101,49 @@ body {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    font-weight: bold;
+    font-weight: 300;
     transition: transform 0.2s ease, background-color 0.2s ease; /* Apply transition here */
 }
 
 .resume-button:hover {
     transform: scale(1.05); /* Increase size on hover */
+}
+
+.experience-section {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.experience-section h2 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.experience-item {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.experience-item:last-child {
+    border-bottom: none;
+    padding-bottom: 10px;
+}
+
+.experience-item h3 {
+    font-size: 0.95em;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 300;
+}
+
+.experience-item h3 em {
+    font-weight: 400;
+}
+
+.experience-item p {
+    font-size: 0.9em;
+    line-height: 1.6;
+    margin-bottom: 0;
 }
